@@ -39,8 +39,6 @@
     }
   </script>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EL9HHYE5LC"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -70,11 +68,31 @@
     }
   </script>
   <title>NewsNow</title>
+    <style>
+    .return-button {
+      position: fixed; /* Fixed position to stay in place during scrolling */
+      top: 28px;    /* Distance from the top */
+      left: 20px;     /* Distance from the left */
+      background-color: #F14D42; /* Distinct orange-red color */
+      color: white;         /* White text for contrast */
+      padding: 10px 20px;    /* Padding for comfortable click area */
+      border-radius: 5px;   /* Rounded corners */
+      text-decoration: none; /* Remove underline from the link */
+      font-weight: bold;    /* Make the text bold */
+      z-index: 1000;        /* Ensure it stays on top of other elements */
+    }
+
+    /* Add a hover effect for better usability */
+    .return-button:hover {
+      background-color: #D33A2F; /* Darker shade on hover */
+    }
+  </style>
 </head>
 
 <body>
   <div id="app"></div>
   <script type="module" src="/src/main.tsx"></script>
+  <a href="https://home.alarmandcxz.dpdns.org/" class="return-button">返回</a>
 </body>
 
 </html>
